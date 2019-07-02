@@ -9,6 +9,10 @@
 
 library(shiny)
 
+library(readxl)
+file.choose()
+b <- read_excel ("C:\\Users\\Jesus\\Desktop\\projeto filas\\filas\\FIRST BANK (WEEK 1).xlsx", sheet = 1)
+
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
    
